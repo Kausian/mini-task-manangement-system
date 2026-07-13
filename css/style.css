@@ -31,7 +31,7 @@ h1 {
     color: #2c3e50;
 }
 
-/* ---------- Flash messages ---------- */
+/* ---Flash messages --- */
 .message {
     padding: 12px 15px;
     border-radius: 6px;
@@ -51,7 +51,7 @@ h1 {
     border: 1px solid #f5c2c0;
 }
 
-/* ---------- Add Task form ---------- */
+/* --- Add Task form --- */
 .task-form {
     display: flex;
     flex-wrap: wrap;
@@ -96,7 +96,7 @@ h1 {
     box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.15);
 }
 
-/* ---------- Buttons ---------- */
+/* --- Buttons ---*/
 button {
     padding: 9px 16px;
     border: none;
@@ -117,7 +117,7 @@ button:hover {
     font-weight: 600;
 }
 
-/* ---------- Validation message ---------- */
+/* --- Validation message ---*/
 .validation-message {
     flex: 1 1 100%;
     padding: 10px 12px;
@@ -128,7 +128,7 @@ button:hover {
     font-size: 14px;
 }
 
-/* ---------- Search bar ---------- */
+/* --- Search bar --- */
 .search-bar {
     width: 100%;
     padding: 11px 14px;
@@ -145,7 +145,7 @@ button:hover {
     box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.15);
 }
 
-/* ---------- Priority badges ---------- */
+/* --- Priority badges --- */
 .badge {
     display: inline-block;
     padding: 4px 10px;
@@ -167,12 +167,12 @@ button:hover {
     background: #d9534f;
 }
 
-/* ---------- Utility ---------- */
+/* --- Utility --- */
 .hidden {
     display: none !important;
 }
 
-/* ---------- Task table ---------- */
+/* --- Task table --- */
 .task-table {
     width: 100%;
     border-collapse: collapse;
@@ -224,7 +224,7 @@ button:hover {
     background: #c33c38;
 }
 
-/* ---------- Responsive ---------- */
+/* --- Responsive --- */
 @media (max-width: 600px) {
     .container {
         padding: 20px 15px;

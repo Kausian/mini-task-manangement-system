@@ -49,31 +49,6 @@ Mini task management system/
 └── README.md
 ```
 
-## XAMPP Setup
-
-1. Install XAMPP.
-2. Open the XAMPP Control Panel.
-3. Start the Apache module.
-4. Start the MySQL module.
-5. Copy the `Mini task management system` folder into the XAMPP `htdocs` directory
-   (usually `C:\xampp\htdocs`).
-
-## Database Import
-
-1. Open your browser and go to `http://localhost/phpmyadmin`.
-2. Click the SQL tab.
-3. Open `database.sql`, copy its contents, and paste them into the SQL box.
-4. Click Go to run it.
-
-This creates the `intern_task_system` database, the `tasks` table, and a few
-sample rows. You can also import the file directly using the phpMyAdmin Import tab.
-
-## How to Run
-
-1. Make sure Apache and MySQL are running in XAMPP.
-2. Open your browser and go to:
-   `http://localhost/Mini%20task%20management%20system/index.php`
-
 ## Default Database Connection
 
 These values are set in `includes/db.php` and match the XAMPP defaults:

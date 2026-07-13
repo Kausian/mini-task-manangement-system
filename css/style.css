@@ -1,0 +1,267 @@
+/* ============================================================
+   Mini Task Management System - Stylesheet
+   ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.5;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+/* ---------- Flash messages ---------- */
+.message {
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.message.success {
+    background: #e6f7ec;
+    color: #1e7e45;
+    border: 1px solid #b7e4c7;
+}
+
+.message.error {
+    background: #fdecea;
+    color: #b02a2a;
+    border: 1px solid #f5c2c0;
+}
+
+/* ---------- Add Task form ---------- */
+.task-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.task-form input[type="text"],
+.task-form textarea,
+.task-form select {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    width: 100%;
+}
+
+.task-form textarea {
+    resize: vertical;
+    min-height: 70px;
+}
+
+.task-form input[type="text"],
+.task-form textarea {
+    flex: 1 1 100%;
+}
+
+.task-form select {
+    flex: 1 1 200px;
+}
+
+.task-form input:focus,
+.task-form textarea:focus,
+.task-form select:focus {
+    outline: none;
+    border-color: #4a90d9;
+    box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.15);
+}
+
+/* ---------- Buttons ---------- */
+button {
+    padding: 9px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #4a90d9;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+button:hover {
+    background: #3a7bc0;
+}
+
+.task-form button {
+    flex: 1 1 100%;
+    font-weight: 600;
+}
+
+/* ---------- Validation message ---------- */
+.validation-message {
+    flex: 1 1 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    background: #fdecea;
+    color: #b02a2a;
+    border: 1px solid #f5c2c0;
+    font-size: 14px;
+}
+
+/* ---------- Search bar ---------- */
+.search-bar {
+    width: 100%;
+    padding: 11px 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #4a90d9;
+    box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.15);
+}
+
+/* ---------- Priority badges ---------- */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.badge-low {
+    background: #2e9e5b;
+}
+
+.badge-medium {
+    background: #e0a800;
+}
+
+.badge-high {
+    background: #d9534f;
+}
+
+/* ---------- Utility ---------- */
+.hidden {
+    display: none !important;
+}
+
+/* ---------- Task table ---------- */
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.task-table th,
+.task-table td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+    vertical-align: top;
+}
+
+.task-table thead th {
+    background: #2c3e50;
+    color: #fff;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.task-table tbody tr:hover {
+    background: #f7f9fc;
+}
+
+.task-table td[colspan] {
+    text-align: center;
+    color: #888;
+    padding: 25px;
+}
+
+/* Action buttons inside the table */
+.task-table td form {
+    display: inline-block;
+    margin: 2px;
+}
+
+.task-table td form button {
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+/* Delete button in a warning colour */
+.task-table td form[action*="delete"] button {
+    background: #d9534f;
+}
+
+.task-table td form[action*="delete"] button:hover {
+    background: #c33c38;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    .task-table thead {
+        display: none;
+    }
+
+    .task-table,
+    .task-table tbody,
+    .task-table tr,
+    .task-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .task-table tr {
+        margin-bottom: 15px;
+        border: 1px solid #eaeaea;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .task-table td {
+        border: none;
+        border-bottom: 1px solid #f0f0f0;
+        padding-left: 45%;
+        position: relative;
+    }
+
+    .task-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 40%;
+        font-weight: 600;
+        color: #555;
+    }
+}

@@ -256,7 +256,7 @@ Warning: this command deletes the Docker database volume and all tasks stored in
 
 ## Database Configuration
 
-The application supports both XAMPP and Docker.
+The application supports both XAMPP and docke
 
 ### XAMPP defaults
 

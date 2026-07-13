@@ -21,7 +21,10 @@ $result = $conn->query("SELECT * FROM tasks ORDER BY created_at DESC, id DESC");
 </head>
 <body>
     <div class="container">
-        <h1>Task Manager</h1>
+        <div class="app-header">
+            <h1>Task Manager</h1>
+            <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">Dark Mode</button>
+        </div>
 
         <?php if (isset($_SESSION["success"])): ?>
             <p class="message success"><?php echo $_SESSION["success"]; unset($_SESSION["success"]); ?></p>
@@ -107,6 +110,9 @@ $result = $conn->query("SELECT * FROM tasks ORDER BY created_at DESC, id DESC");
                 </tr>
             </tbody>
         </table>
+
+        <!-- Pagination controls (filled in by JavaScript) -->
+        <div class="pagination" id="pagination"></div>
     </div>
 
     <script src="js/app.js"></script>

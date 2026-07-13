@@ -4,11 +4,11 @@ A simple task management web application built with Core PHP and MySQL. It lets 
 
 ## Technologies Used
 
-- PHP (Core PHP, no framework)
+- PHP
 - MySQL (MySQLi)
 - HTML5
 - CSS3
-- Vanilla JavaScript
+- JavaScript
 - XAMPP (Apache + MySQL)
 
 ## Features
@@ -28,6 +28,11 @@ A simple task management web application built with Core PHP and MySQL. It lets 
 - Loading state on the submit button to prevent multiple submissions
 - Priority badges styled in green (Low), orange (Medium), and red (High)
 - Hover effects on buttons and table rows
+
+## Optional Features
+
+- Pagination
+- Dark mode toggle
 
 ## Folder Structure
 

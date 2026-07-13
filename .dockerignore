@@ -1,0 +1,8 @@
+.git
+.github
+.vscode
+.idea
+.env
+README.md
+*.log
+data_backup*
